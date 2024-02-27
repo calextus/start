@@ -1,4 +1,6 @@
-import './App.css'
+import './App.css';
+import {React, useState} from 'react';
+
 
 const cardImages = [
   {"src": "/img/helmet.jpg" },
@@ -30,7 +32,7 @@ const shufflecards = () => {
   return (
     <div className="App">
       <h1>Magic Match</h1>
-      <button onClick={shufflecards}>New Games</button>
+      <button onClick={alert("hello")}>New Games</button>
     </div>
   );
 }
