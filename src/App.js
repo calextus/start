@@ -32,7 +32,7 @@ const shufflecards = () => {
   return (
     <div className="App">
       <h1>Magic Match</h1>
-      <button onClick={shuffleCards}>New Games</button>
+      <button onClick={shufflecards}>New Games</button>
 
        <div className="card-grid">
         {cards.map(card => (
