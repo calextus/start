@@ -37,7 +37,7 @@ const shufflecards = () => {
 
        <div className="card-grid">
         {cards.map(card => ( 
-          <SingleCard />
+          <SingleCard  key={card.id} />
         ))}
        </div>
 
