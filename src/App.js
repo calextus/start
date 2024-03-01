@@ -3,12 +3,12 @@ import {React, useState} from 'react';
 
 
 const cardImages = [
-  {"src": "/img/helmet.jpg" },
-  {"src": "/img/potion.jpg" },
-  {"src": "/img/ring.jpg" },
-  {"src": "/img/scroll.jpg" },
-  {"src": "/img/shield.jpg" },
-  {"src": "/img/sword.jpg" }, 
+  {"src": "helmet.jpg" },
+  {"src": "potion.jpg" },
+  {"src": "ring.jpg" },
+  {"src": "scroll.jpg" },
+  {"src": "shield.jpg" },
+  {"src": "sword.jpg" }, 
 ]
 
 function App() {
@@ -35,11 +35,11 @@ const shufflecards = () => {
       <button onClick={shufflecards}>New Games</button>
 
        <div className="card-grid">
-        {cards.map(card => (
+        {cards.map(card => ( 
           <div className="card" key={card.id}>
             <div>
               <img className="front" src={card.src} alt="card front" />
-              <img className="back" src="/img/cover.jpg" alt="card back" />
+              <img className="back" src="cover.jpg" alt="card back" />
             </div>
           </div>
         ))}
